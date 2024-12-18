@@ -38,8 +38,8 @@ with st.expander('Visualization'):
     st.bar_chart(data=df, x='genre', y='total_sales', color='genre')
 
     #top_publisher = df[['publisher', 'total_sales']].nlargest(15, 'total_sales')
-    st.info("Total Sales By Publisher")    
-    st.bar_chart(data=df, x='publisher', y='total_sales', color='publisher')
+    st.info("Total Sales By Consoles")    
+    st.bar_chart(data=df, x='console', y='total_sales', color='console')
 
 
     top_sellers = df[['title', 'total_sales']].nlargest(15, 'total_sales')
