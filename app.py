@@ -46,8 +46,8 @@ with st.expander('Visualization'):
     st.info("Top Selling Games")
     ts_sorted
 
-    st.info("Top Selling Games")
-    st.bar_chart(data=top_sellers, x='title', y='total_sales')
+    #st.info("Top Selling Games")
+    #st.bar_chart(data=top_sellers, x='title', y='total_sales')
 
   
   
