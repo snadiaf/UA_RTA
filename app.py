@@ -39,7 +39,7 @@ with st.expander('Visualization'):
 
     top_publisher = df[['publisher', 'total_sales']].nlargest(15, 'total_sales')
     st.info("Publisher of 15 Top Selling Games")    
-    st.bar_chart(data=df, x='publisher', y='total_sales', color='publisher')
+    st.bar_chart(data=top_publisher, x='publisher', y='total_sales', color='publisher')
 
 
     top_sellers = df[['title', 'total_sales']].nlargest(15, 'total_sales')
