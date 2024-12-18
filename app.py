@@ -37,6 +37,10 @@ with st.expander('Visualization'):
     st.info("Total Sales By Genre")
     st.bar_chart(data=df, x='genre', y='total_sales', color='genre')
 
+    st.info("Total Sales By Publisher")
+    st.bar_chart(data=df, x='publisher', y='total_sales', color='genre')
+
+
     top_sellers = df[['title', 'total_sales']].nlargest(15, 'total_sales')
     
     #st.bar_chart(top_sellers.set_index('title').sort_values('total_sales'))
