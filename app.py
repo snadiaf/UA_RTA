@@ -43,7 +43,7 @@ with st.expander('Visualization'):
 
     ts_sorted = top_sellers.sort_values(by='total_sales',ascending=False)
 
-    st.info("Top Selling Games")
+    st.info("Titles of 20 Top Selling Games")
     ts_sorted
 
     #st.info("Top Selling Games")
